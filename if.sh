@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 COLOR=$1
-if [ $COLOR = "blue"]
+if [ $COLOR = "blue" ]
   then
     echo "The color is $COLOR"
 fi
