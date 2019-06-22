@@ -7,5 +7,5 @@ do
   ((COUNT++))
 done
 
-echo "Bucle While Finalizado con éxito"
+echo "Bucle While Finalizado con éxito."
 exit 0
