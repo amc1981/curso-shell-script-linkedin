@@ -14,4 +14,6 @@ COMPUTER=50
 if [ $USER_GUESS -lt $COMPUTER ]
 then
   echo "Estás muy abajo"
+else
+  echo "Acertaste o te has pasado..."
 fi
