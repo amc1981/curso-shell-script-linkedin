@@ -1,4 +1,4 @@
-#!/usr/bin/env #!/usr/bin/env bash
+#!/usr/bin/env bash
 COUNT=0
 
 while [ $COUNT -lt 10 ]
