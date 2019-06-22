@@ -14,6 +14,9 @@ COMPUTER=50
 if [ $USER_GUESS -lt $COMPUTER ]
 then
   echo "Estás muy abajo"
+elif [ $USER_GUESS -gt $COMPUTER ]
+then
+  echo "Te has pasado"
 else
-  echo "Acertaste o te has pasado..."
+  echo "Acertaste, la solución es 50"
 fi
