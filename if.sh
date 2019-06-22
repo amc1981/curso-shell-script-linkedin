@@ -3,7 +3,9 @@
 COLOR=$1
 if [ $COLOR = "blue" ]
   then
-    echo "The color is $COLOR"
+    echo "BIEN El color es  $COLOR"
+  else
+    echo "No has acertado, has dicho $COLOR"
 fi
 
 USER_GUESS=$2
