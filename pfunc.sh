@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
-function GetFiles(){
-    TEN_FILES=`ls -1 | head -10`
-    echo $TEN_FILES
+function GetFiles() {
+    TEN_FILES=`ls -1 | sort | head -10`
 }
 function ShowFiles(){
-  GetFiles
-  LCOUNT=1
-  for FILE in TEN_FILES
+  local LCOUNT=1
+  for FILE in $@
   do
     echo #$LCOUNT = $FILE
     ((COUNT++))
   done
 }
-ShowFiles GetFiles
+GetFiles
+ShowFiles $TEN_FILES
 exit 0
