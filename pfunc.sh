@@ -6,7 +6,7 @@ function ShowFiles(){
   local LCOUNT=1
   for FILE in $@
   do
-    echo "#$LCOUNT = $FILE"
+    echo "FILE #$LCOUNT = $FILE"
     ((COUNT++))
   done
 }
