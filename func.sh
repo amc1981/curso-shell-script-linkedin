@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 
 function Hello(){
-  echo "Hello"
+  local LNAME=$1
+  echo "Hello $LNAME"
 }
 
 GoodBye() {
-  echo "Goobye"
+  echo "Goobye $1"
 }
 
 echo "Calling the Hello funtction"
-Hello
+Hello Antonio
 echo ""
 echo ""
 echo "Calling the Godbye funtction"
-GoodBye
+GoodBye PACO
 
 exit 0
