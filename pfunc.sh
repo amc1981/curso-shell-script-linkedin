@@ -11,5 +11,5 @@ function ShowFiles(){
     ((COUNT++))
   done
 }
-ShowFiles
+ShowFiles $TEN_FILES
 exit 0
