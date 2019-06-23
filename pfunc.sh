@@ -6,7 +6,7 @@ function GetFiles(){
 function ShowFiles(){
   GetFiles
   LCOUNT=1
-  for FILE in GetFiles
+  for FILE in TEN_FILES
   do
     echo #$LCOUNT = $FILE
     ((COUNT++))
