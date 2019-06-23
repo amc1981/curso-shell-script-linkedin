@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-
-USER_NUM=$1
 COUNT=1
-while [ $COUNT -lt $USER_NUM ]
+USER_NUM=$1
+while [ $COUNT -le $USER_NUM ]
 do
   echo COUNT = $COUNT
   ((COUNT++))
