@@ -11,5 +11,4 @@ do
 done
 
 echo "For loop terminated"
-
 exit 0
