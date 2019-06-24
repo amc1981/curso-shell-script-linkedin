@@ -17,6 +17,8 @@ do
   elif [[ $GUESS -gt $COMPUTER ]]
     echo "Te has pasado"
     continue
-  else
-    echo "Muy bien has acertado $GUESS es mi número"
+  fi
+  $GUESS=$COMPUTER
 done
+
+echo "Muy bien has acertado $GUESS es mi número"
