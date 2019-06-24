@@ -3,7 +3,7 @@ COMPUTER=39
 
 read -p "Adivina el número que estoy pensando: " $GUESS
 
-while [ $COMPUTER -eq $GUESS ]
+while [ $COMPUTER -ne $GUESS ]
 do
   read -p "Adivina el número que estoy pensando: " $GUESS
   if [[ ! $GUESS =~ ^[0-9]+$ ]]
