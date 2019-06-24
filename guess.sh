@@ -15,6 +15,7 @@ do
     echo "Te has quedado corto"
     continue
   elif [[ $GUESS -gt $COMPUTER ]]
+  then
     echo "Te has pasado"
     continue
   fi
