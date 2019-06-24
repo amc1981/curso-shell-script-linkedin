@@ -2,7 +2,7 @@
 
 STATUS=0
 PROCESS=$1
-if [ -z $PROCESS]
+if [ -z $PROCESS ]
 then
   echo "Please suplly a PID"
   exit 1
