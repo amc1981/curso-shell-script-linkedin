@@ -10,7 +10,7 @@ fi
 echo "Watching PID = $PROCESS"
 while [ $STATUS -eq 0 ]
 do
- $PROCESS > /dev/null
+ ps $PROCESS > /dev/null
  STATUS=$?
 done
 
