@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 COMPUTER=39
+PLAYING=0
 
 read -p "Adivina el número que estoy pensando: " $GUESS
 
-while [[ $COMPUTER -ne $GUESS ]]
+while [[ $PLAYING -eq 0 ]]
 do
-  read -p "Adivina el número que estoy pensando: " $GUESS
-  if [[ ! $GUESS =~ ^[0-9]+$ ]]
+  read -p "Adivina el número que estoy pensando: " GUESS
+  if [ $GUESS -eq $COMPUTER ]
   then
-    echo "Non digit characters detected [$GUESS]"
-    continue
-  elif [[ $GUESS -lt $COMPUTER ]]
+    echo "Has acertado, el número era $COMPUTER"
+    exit 0
+    elif [[ $GUESS -lt $COMPUTER ]]
   then
     echo "Te has quedado corto"
     continue
@@ -19,7 +20,6 @@ do
     echo "Te has pasado"
     continue
   fi
-  $GUESS=$COMPUTER
 done
 
-echo "Muy bien has acertado $GUESS es mi número"
+exit 0
