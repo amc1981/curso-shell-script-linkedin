@@ -2,8 +2,6 @@
 COMPUTER=39
 PLAYING=0
 
-read -p "Adivina el número que estoy pensando: " $GUESS
-
 while [[ $PLAYING -eq 0 ]]
 do
   read -p "Adivina el número que estoy pensando: " GUESS
