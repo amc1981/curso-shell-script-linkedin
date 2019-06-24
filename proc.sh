@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
 
 STATUS=0
-
-if [ -z $1]
+PROCESS=$1
+if [ -z $PROCESS]
 then
   echo "Please suplly a PID"
   exit 1
 fi
-echo "Watching PID = $1"
+echo "Watching PID = $PROCESS"
 while [ $STATUS -eq 0]
 do
-
- $1 > /dev/null
+ $PROCESS > /dev/null
  STATUS=$?
 done
 
-echo "Process $1 has terminated"
+echo "Process $PROCESS has terminated"
 exit 0
